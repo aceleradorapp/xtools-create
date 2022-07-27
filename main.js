@@ -368,7 +368,6 @@ function openControl(){
 
     nativeTheme.themeSource = 'dark';
 
-    //controlLegend.webContents.session.clearStorageData();
     controlLegend.webContents.openDevTools();
 
     controlLegend.on('ready-to-show', () => {              
