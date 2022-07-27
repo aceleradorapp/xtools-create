@@ -1,0 +1,26 @@
+{
+  "name": "Xtool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "npx electron-packager . --out=packages --icon=src/assets/image/icon/Xtools-ico-nano.ico --overwrite",
+    "electron": "ELECTRON_DISABLE_SECURITY_WARNINGS=true electron .",
+    "rebuild": "electron-rebuild -f -w better-sqlite3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^7.6.2",
+    "better-sqlite3-with-prebuilds": "^7.4.3",
+    "electron": "^19.0.9",
+    "electron-browser-storage": "^1.0.7",
+    "electron-packager": "^13.1.1",
+    "engine-animate": "^1.0.25"
+  },
+  "devDependencies": {
+    "electron-rebuild": "^3.2.8"
+  }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Control</title>
+
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+</head>
+<body>
+    <div class="container container-center">
+        <div class="contents">
+            <div class="controlVideo">
+                <button id="bt-play"><img src="../../assets/image/iconPlayer/play.png" alt=""></button>
+                <button id="bt-pause"><img src="../../assets/image/iconPlayer/pause.png" alt=""></button>
+                <button id="bt-stop"><img src="../../assets/image/iconPlayer/stop.png" alt=""></button>
+                <button id="bt-next"><img src="../../assets/image/iconPlayer/next.png" alt=""></button>
+                <button id="bt-prev"><img src="../../assets/image/iconPlayer/prev.png" alt=""></button>
+            </div>
+            <div class="configVideo border-control">
+                <span>Configurações</span>
+                <div class="items">
+                    <div class="item">
+                        <div class="border-control">
+                            <span>Precisão</span>
+                            <input id="btprecision" type="number" value="0.1" step="0.1" max="30" min="0.1">
+                        </div>
+                        <div class="border-control">
+                            <span>Velocidade</span>
+                            <input id="btVelocity" type="text" value="1">
+                        </div>
+                        <div class="border-control">
+                            <span>teste</span>
+                            <input type="text" value="0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="progressVideo border-control">
+                <span>Vídeo</span>
+                <div id="progressBase" class="progress-base"></div>
+                <div id="progressVideo" class="progress"></div>
+            </div>
+            <div class="video-position border-control">
+                <span>Posição vídeo</span>
+                <div>
+                    <div class="position-video border-control">
+                        <span>Posição</span>
+                        <div id="positionVideoDisplay" style="text-align: center;">00000 / 401211</div>
+                    </div>
+                    <div class="minute-video border-control">
+                        <span>Minutos</span>
+                        <div id="minutesVideoDisplay" style="text-align: center;">1:00 / 10:00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./scripts.js"></script>
+</body>
+</html>

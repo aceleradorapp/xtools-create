@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Document</title>
+
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+</head>
+<body>
+
+    <div id="windows-notification" class="window-notification hide-window">        
+        <div id="window" class="window">
+            <div class="title-window">   
+                <div id="btn-info" class="btn-info">!</div>             
+                <div id="title-window">teste de titulo</div>       
+                <div id="btn-close" class="btn-close">X</div> 
+            </div>
+
+            <div id="body-window" class="body-window">
+                <div id="text-window" class ="text-window">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </div>
+            </div>
+
+            <div class="content-window">
+                <button id="btn-1">OK</button>
+                <button id="btn-2">Cancelar</button>                
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content">
+
+            <div class="control">                
+                <div class="control-captura">
+                    <div class="button-capture">
+                        <div class="separator">Legendas</div>
+                    </div>
+                    <div class="button-capture">
+                        <div class="control-legend">
+                            <textarea name="" id="textLegend" cols="30" rows="10"></textarea>
+                            <button id="addLegend" class="">Adicionar</button>
+                            <button id="clearLegend">Limpar</button>
+                        </div>
+                    </div>                    
+                    <div class="button-capture">
+                        <div class="separator">Observações</div>
+                    </div>
+                    <div class="button-capture">
+                        <div class="control-Note">
+                            <textarea name="" id="textNote" cols="30" rows="10"></textarea>
+                            <button id="addNote">Adicionar</button>
+                            <button id="clearNote">Limpar</button>
+                        </div>
+                    </div>
+                    <div class="button-capture">
+                        <div class="separator">Caracteres</div>
+                    </div>                    
+                    <div class="button-capture">
+                        <div id="displayCharacter">Total de caracteres: 0</div>
+                        <div id="displayMoment">Total de momentos: 0</div>
+                    </div>
+                    <div class="button-capture">
+                        <div class="separator">Capturar</div>
+                    </div>
+                    <div class="button-capture">
+                        <div id="displayPositionVideo" class="displayPositionVideo">Posição atual do vídeo: 0 / 0</div>
+                    </div>
+                    <div class="button-capture">
+                        <div>
+                            <button id="initialPoint">Ponto inicial</button>
+                            <span id="displayInitialPoint">0</span>
+                        </div>
+                    </div>
+                    <div class="button-capture">
+                        <div>
+                            <button id="finalPoint">Ponto final</button>
+                            <span id="displayFinalPoint">0</span>
+                        </div>
+                    </div>  
+                    <div class="button-capture">
+                        <button id="saveRecord">Gravar registro</button>                        
+                    </div>         
+                    <div class="button-capture">
+                        <div>
+                            <input type="radio" id="screen" name="typeAction" value="screen">
+                            <label for="screen">Tela</label><br>
+                        </div>
+                        <div>
+                            <input type="radio" id="click" name="typeAction" value="click">
+                            <label for="click">Click</label><br>
+                        </div>
+                        <div>
+                            <input type="radio" id="clickDrag" name="typeAction" value="clickDrag">
+                            <label for="clickDrag">Click arraste</label><br>
+                        </div>
+                        <div>
+                            <input type="radio" id="typing" name="typeAction" value="typing">
+                            <label for="typing">Digitação</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="complete" name="typeAction" value="complete">
+                            <label for="complete">Autocomplete</label>   
+                        </div>                     
+                    </div>                                                                    
+                    <div class="button-capture">
+                        <div class="separator"></div>
+                    </div>                    
+                </div>
+
+            </div>
+            
+            <div id="legends" class="legends">            
+                <!-- <div class="legend">                    
+                    <div class="tumbs">  
+                        <div class="tumb tumb-number">
+                            1
+                        </div>
+                        <div class="tumb"><img src="../../assets/image/iconPlayer/info.png" alt=""></div>  
+                        <div class="tumb"><img src="../../assets/image/iconPlayer/drag.png" alt=""></div>       
+                                                             
+                    </div>                    
+                    
+                    <div class="text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus maxime modi optio rem eum repellendus neque quasi facilis cupiditate maiores sed dolore, animi alias impedit hic porro repudiandae. Soluta, dignissimos.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus maxime modi optio rem eum repellendus neque. 
+                    </div>
+
+                    <div class="buttons">
+                        <button class="btn-cube" id="button-edit"><img src="../../assets/image/iconAction/edit.png" alt=""></button>
+                        <button class="btn-cube" id="button-clear"><img src="../../assets/image/iconAction/clear.png" alt=""></button>
+                        <button class="btn-cube" id="button-interactive"><img src="../../assets/image/iconAction/iInteraction.png" alt=""></button>
+                    </div>
+                </div>
+
+                <div class="legend selected">
+                    
+                    <div class="tumbs">
+                        <div class="tumb tumb-number">
+                            2
+                        </div>
+
+                        <div class="tumb"><img src="../../assets/image/iconPlayer/info.png" alt=""></div>  
+                        <div class="tumb"><img src="../../assets/image/iconPlayer/drag.png" alt=""></div>                          
+                    </div>                    
+                 
+                    <div class="text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus maxime modi optio rem eum repellendus neque quasi facilis .                        
+                    </div>
+
+                    <div class="buttons">
+                        <button>E</button>
+                        <button>A</button>
+                        <button>D</button>
+                    </div>
+
+                </div> -->
+
+                
+            </div>
+
+        </div>
+
+    </div>
+    
+    <script type="module" src="./scripts.js"></script>
+</body>
+</html>
